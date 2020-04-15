@@ -1,0 +1,8 @@
+2. Bold the currently selected item in the move list: 20%
+3. Rewrite Board to use two loops to make the squares instead of hardcoding them: 10%
+4. Add a toggle button that lets you sort the moves in either ascending or descending order: 10%
+5. When someone wins, highlight the five squares that caused the win: 10%
+6. When no one wins, display a message about the result being a draw: 10%
+7. Host your project on public website: 20%
+
+score : 8

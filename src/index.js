@@ -111,7 +111,7 @@ class Game extends React.Component {
         const moves = history.map((step, move) => {
             const desc = move ?
                 'Go to move #' + move :
-                'Go to game start';
+                'Go to game start' + move + "(" + getIndex(move).cloumnIndex + "," + getIndex(move).rowIndex + ")";
             if(move === this.state.indexHistoryClick){
                 return (
                     <li>
@@ -315,6 +315,15 @@ function calculateWinner(squares, index) {
 
 
     return null;
+}
+
+function getIndex(index){
+    let cloumnIndex = index % 20;
+    let rowIndex = Math.floor(index / 20);
+    return {
+        cloumnIndex,
+        rowIndex
+    }
 }
 
 // ========================================
